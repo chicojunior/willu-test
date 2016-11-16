@@ -1,6 +1,10 @@
 //@import "reset";
 @import "fonts";
 
+@import "header";
+@import "albums";
+
+
 viewport {
   width: device-width;
 }
@@ -20,17 +24,19 @@ input {
 
 body {
   background-color: #fff;
+  //font-family: 'Lato', sans-serif;
 }
 
 h1 {
   margin: 0;
 }
 
-// .pure-g [class *= "pure-u"] {
-//     font-family: 'varela_roundregular', sans-serif;
-// }
+a, a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
 
-// .container {
-//   margin: 0 auto;
-//   max-width: 960px;
-// }
+
+.container {
+  margin: 0 3%;
+  height: 100%;
+}
