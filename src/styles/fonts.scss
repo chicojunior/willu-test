@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'varela_roundregular';
+    src: url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
+         url('../fonts/varelaround-regular-webfont.woff') format('woff'),
+         url("../fonts/VarelaRound-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

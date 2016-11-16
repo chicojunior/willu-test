@@ -1,0 +1,39 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Description of the project",
+  "author": "Chico Junior <juniordev2@gmail.com>",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.16.1",
+    "node-sass": "^3.7.0",
+    "npm-check": "^5.2.3",
+    "npm-run-all": "^3.1.0",
+    "onchange": "^3.0.2",
+    "uglify-js": "^2.7.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "clean": "rm -rf dist && mkdir dist",
+    "clean:scripts": "rm -rf dist/scripts/main.js",
+    "sass": "node-sass --output-style compressed -o dist/styles src/styles/main.scss",
+    "cssnano": "cssnano dist/styles/main.css dist/styles/main.min.css",
+    "uglify": "uglifyjs dist/scripts/main.js -c > dist/scripts/main.min.js",
+    "serve": "browser-sync start -s dist -f dist",
+    "build:templates": "cp -rf src/*.html dist",
+    "build:styles": "run-s sass",
+    "build:scripts": "cp -rf src/scripts dist && run-s uglify && run-s clean:scripts",
+    "build:images": "cp -rf src/images dist",
+    "build:vendors": "cp -rf src/vendors dist",
+    "build:fonts": "cp -rf src/fonts dist",
+    "build": "run-s clean build:templates build:styles build:scripts build:images build:vendors build:fonts",
+    "watch:templates": "onchange 'src/*.html' -- npm run build:templates",
+    "watch:styles": "onchange 'src/styles' -- npm run build:styles",
+    "watch:scripts": "onchange 'src/scripts' -- npm run build:scripts",
+    "watch:images": "onchange 'src/images' -- npm run build:images",
+    "watch:vendors": "onchange 'src/vendors' -- npm run build:vendors",
+    "watch": "run-p watch:templates watch:styles watch:scripts watch:images watch:vendors serve",
+    "start": "run-s build watch"
+  }
+}
