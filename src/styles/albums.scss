@@ -1,16 +1,37 @@
-.willu-s-albums {
+.willu-c-albums {
+
+  // &__card {
+  //   border-radius: 5px;
+  //   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  //   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  //
+  //   &:hover {
+  //     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  //   }
+  // }
 
   width: 100%;
   font-family: 'Lato', sans-serif;
 
+  a, a:link, a:visited, a:active, a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 
   .pure-g [class *= "pure-u"] {
     font-family: 'Lato', sans-serif;
   }
 
-
+  .category-text, .test {
+    color: #fff;
+  }
 
   .menu, .albums {
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
     display: inline-block;
     height: 200px;
   }
@@ -18,20 +39,178 @@
   .menu {
     padding: 0 1%;
 
-    //background-color: red;
-    ul {
-      padding: 0;
-      list-style: none;
+    .category-text {
+      border-bottom: 1px solid #B2B2B2;
     }
 
     li {
       width: 100%;
+
+      &:hover {
+        background-color: #d9d9d9;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        transition: all .4s ease;
+      }
     }
+
   }
 
   .albums {
-    //background-color: black;
+
+    .list {
+      li {
+        display: inline-block;
+        margin: 0 10px 10px 0;
+      }
+    }
+
+
+    .list-item {
+      position: relative;
+      z-index: 2;
+
+      .album-button {
+        background: transparent;
+        border: none;
+        outline: none;
+
+        i:hover {
+          color: #d9d9d9;
+          -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          transition: all .4s ease;
+        }
+      }
+
+      .button-container {
+        z-index: 3;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        display: none;
+
+        .fa {
+          font-size: 55px;
+          color: #fff;
+
+        }
+      }
+
+      &:hover {
+        .button-container {
+          display: block;
+          -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          transition: all .4s ease;
+        }
+      }
+    }
+
+    .album-cover, .album-text {
+      padding: 10px;
+    }
+
+    .album-cover {
+      border-radius: 5px;
+      width: 280px;
+      transition: all .2s ease-in-out;
+
+
+      // &:hover {
+      //   transform: scale(0.9);
+      //   //-webkit-filter: blur(1px);
+      //   //filter: blur(1px);
+      // }
+    }
   }
+
+  .top-list {
+    margin-top: -120px;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .top-list-item {
+      padding-right: 20px;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    img {
+      width: 350px;
+    }
+
+    .album-image {
+      position: relative;
+    }
+
+    .top-ribbon {
+      width: 85px;
+      height: 88px;
+      overflow: hidden;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+    }
+
+    .ribbon {
+      //font-family: 'Lato'
+      font: 13px 'Lato', Sans-Serif;
+      color: #333;
+      text-align: center;
+      text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform:    rotate(45deg);
+      -ms-transform:     rotate(45deg);
+      -o-transform:      rotate(45deg);
+      position: relative;
+      padding: 7px 0;
+      left: -5px;
+      top: 15px;
+      width: 120px;
+      background-color: #D22121;
+      color: #fff;
+      -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+      box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+    }
+
+    .ribbon:before, .ribbon:after {
+      content: "";
+      border-top:   3px solid #DC3C3B;
+      border-left:  3px solid transparent;
+      border-right: 3px solid transparent;
+      position:absolute;
+      bottom: -3px;
+    }
+
+    .ribbon:before {
+      left: 0;
+    }
+    .ribbon:after {
+      right: 0;
+    }
+  }
+
+  .track-list {
+    display: none;
+    color: #fff;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    li {
+      display: block;
+    }
+  }
+
+
 
 
 }

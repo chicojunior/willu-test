@@ -2,6 +2,7 @@
 @import "fonts";
 
 @import "header";
+@import "banner";
 @import "albums";
 
 
@@ -23,7 +24,7 @@ input {
 }
 
 body {
-  background-color: #fff;
+  background-color: #000;
   //font-family: 'Lato', sans-serif;
 }
 
@@ -37,6 +38,11 @@ a, a:link, a:visited, a:active, a:hover {
 
 
 .container {
-  margin: 0 3%;
+  margin: 0 7%;
+  //max-width: 999px;
+
+}
+
+.container, .pure-g {
   height: 100%;
 }

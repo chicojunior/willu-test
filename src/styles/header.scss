@@ -1,9 +1,13 @@
-.willu-s-header {
+.willu-c-header {
 
   width: 100%;
-  height: 60px;
+  height: 100px;
   color: #fff;
-  background-color: #D22121;
+  z-index: 10;
+  //background-color: #D22121;
+  background-color: transparent;
+  //position: fixed;
+
   font-family: 'varela_roundregular', sans-serif;
 
   a, a:link, a:visited, a:active, a:hover {
@@ -19,7 +23,7 @@
     height: 100%;
   }
 
-  .willu-c-logo {
+  &__logo {
 
     margin: auto 0;
 
@@ -30,15 +34,15 @@
 
     img {
       display: inline-block;
-      width: 55px;
-      //vertical-align: middle;
+      width: 90px;
+      vertical-align: middle;
     }
 
 
   }
 
 
-  .willu-c-nav {
+  &__nav {
     text-transform: uppercase;
 
     // li:hover {

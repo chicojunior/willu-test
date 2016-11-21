@@ -11,52 +11,143 @@
 
     <!-- provisório -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--  -->
     <link href="images/favicon.ico" rel="icon">
     <link href="vendors/css/pure-min.css" rel="stylesheet">
-    <link href="vendors/css/fontawesome.min.css" rel="stylesheet">
-    <link href="vendors/css/swiper.min.css" rel="stylesheet">
+    <!-- <link href="vendors/css/fontawesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="vendors/css/swiper.min.css" rel="stylesheet"> -->
     <link href="styles/main.css" rel="stylesheet">
 
   </head>
   <body>
 
-    <header class="willu-s-header">
+    <header class="willu-c-header">
       <div class="container">
         <div class="pure-g">
-          <div class="willu-c-logo pure-u-1-2">
+          <div class="willu-c-header__logo pure-u-1-1">
             <a href="#">
               <img src="images/w.png" alt="" />
             </a>
-            <h1>Music Store</h1>
           </div>
-          <nav class="willu-c-nav pure-u-1-2">
-            <ul>
-              <a href="" class="link"><li>home</li></a>
-              <a href="" class="link"><li>about</li></a>
-              <a href="" class="link"><li>contact</li></a>
-            </ul>
-          </nav>
         </div>
       </div>
     </header>
 
-    <section class="willu-s-albums">
+    <section class="willu-c-banner">
       <div class="container">
+        <div class="willu-c-banner__text">
+          <h1>Will U Music?</h1>
+          <p>Every album, song and video of your favorite artists.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="willu-c-albums">
+
+      <!-- top albums -->
+      <div class="container">
+        <div class="albums-list">
+          <div class="top-list">
+            <ul>
+
+              <li class="top-list-item">
+                <div class="album-image">
+                  <a href="" onclick="">
+                    <div class="top-ribbon">
+                      <div class="ribbon">Top Album</div>
+                    </div>
+                    <img class="album-cover" src="images/album1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="album-text">
+                  <a href="">
+                    <h3>Korn</h3>
+                    <p>Follow the leader</p>
+                  </a>
+                </div>
+                <div class="track-list">
+                  <p>
+                    album tracks
+                  </p>
+                  <ul>
+                    <li>track 1</li>
+                    <li>track 2</li>
+                    <li>track 3</li>
+                    <li>track 4</li>
+                    <li>track 5</li>
+                    <li>track 6</li>
+                    <li>track 7</li>
+                    <li>track 8</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="top-list-item">
+                <div class="album-image">
+                  <a href="" onclick="">
+                    <div class="top-ribbon">
+                      <div class="ribbon">Top Album</div>
+                    </div>
+                    <img class="album-cover" src="images/album1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="album-text">
+                  <a href="">
+                    <h3>Korn</h3>
+                    <p>Follow the leader</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="top-list-item">
+                <div class="album-image">
+                  <a href="" onclick="">
+                    <div class="top-ribbon">
+                      <div class="ribbon">Top Album</div>
+                    </div>
+                    <img class="album-cover" src="images/album1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="album-text">
+                  <a href="">
+                    <h3>Korn</h3>
+                    <p>Follow the leader</p>
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
         <div class="pure-g">
 
           <aside class="menu pure-u-1-5">
             <div class="container">
 
               <div class="block">
-                <h3>Categories</h3>
-                <hr>
+                <div class="category-text">
+                  <h2>Categories</h2>
+                </div>
+                <!-- <hr> -->
                 <ul>
-                  <a href=""><li>Pop</li></a>
-                  <a href=""><li>Rock</li></a>
                   <a href=""><li>Country</li></a>
+                  <a href=""><li>Electronic</li></a>
+                  <a href=""><li>Hip Hop</li></a>
+                  <a href=""><li>Jazz</li></a>
+                  <a href=""><li>Latin</li></a>
+                  <a href=""><li>Metal</li></a>
+                  <a href=""><li>Pop</li></a>
+                  <a href=""><li>Rap</li></a>
+                  <a href=""><li>Reggae</li></a>
+                  <a href=""><li>Rock</li></a>
+                  <a href=""><li>World Music</li></a>
                 </ul>
               </div>
+
             </div>
 
           </aside>
@@ -64,16 +155,173 @@
           <div class="albums pure-u-4-5">
 
             <div class="container">
-              <div class="">
-                <h2>Top Albums</h2>
+
+              <div class="block">
+
+                <div class="test">
+                  <h2>Newest</h2>
+                </div>
+
+                <div class="albums-list">
+                  <div class="list">
+                    <ul>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Korn</h3>
+                            <p>Follow the leader</p>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Korn</h3>
+                            <p>Follow the leader</p>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Korn</h3>
+                            <p>Follow the leader</p>
+                          </a>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
               </div>
-              <div class="albums-list">
-                <div class="list">
-                  <ul>
-                    <a href="images/album1.jpg"><li></li></a>
-                  </ul>
+
+              <div class="block">
+                <div class="test">
+                  <h2>By Genre</h2>
+                </div>
+                <div class="albums-list">
+                  <div class="list">
+                    <ul>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Country</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Electronic</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Hip Hop</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Jazz</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Latin</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Metal</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Pop</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Rap</h3>
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="list-item willu-c-albums__card">
+                        <a href="" onclick="">
+                          <img class="album-cover" src="images/album1.jpg" alt="" />
+                        </a>
+                        <div class="album-text">
+                          <a href="">
+                            <h3>Rock</h3>
+                          </a>
+                        </div>
+                      </li>
+
+
+
+                    </ul>
+                  </div>
                 </div>
               </div>
+
             </div>
 
 
