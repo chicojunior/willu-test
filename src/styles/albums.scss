@@ -11,6 +11,8 @@
   // }
 
   width: 100%;
+  height: inherit;
+  //overflow: auto;
   font-family: 'Lato', sans-serif;
 
   a, a:link, a:visited, a:active, a:hover {
@@ -33,7 +35,7 @@
     }
 
     display: inline-block;
-    height: 200px;
+    //height: 200px;
   }
 
   .menu {
